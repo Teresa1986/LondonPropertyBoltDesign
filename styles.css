@@ -10,6 +10,9 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
 }
 
 /* Header styles */
@@ -296,13 +299,24 @@ main {
 }
 
 /* Footer */
-footer {
+/* footer {
     background-color: #00264d;
     color: white;
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
+    
+}  */
+
+footer {
+    background-color: #00264d;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
+
 
 /* Animations */
 @keyframes fadeIn {
